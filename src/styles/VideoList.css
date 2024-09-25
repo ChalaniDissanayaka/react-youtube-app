@@ -1,0 +1,57 @@
+/* Grid container for video cards */
+.video-list {
+  display: grid;
+  grid-template-columns: 1fr; /* Default to 1 column on mobile */
+  gap: 20px; /* Spacing between cards */
+  margin: 20px;
+}
+
+/* Responsive grid for larger screens */
+@media (min-width: 600px) {
+  .video-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+}
+
+@media (min-width: 900px) {
+  .video-list {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns on desktops */
+  }
+}
+
+/* Style for individual video card */
+.video-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+/* Hover effect to lift the card slightly */
+.video-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Video thumbnail styles */
+.video-card img {
+  width: 100%;
+  border-bottom: 2px solid #eee;
+}
+
+/* Style for the video title */
+.video-card .video-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #333;
+}
+
+/* Style for the video description */
+.video-card .video-description {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
