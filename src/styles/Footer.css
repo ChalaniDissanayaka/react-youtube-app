@@ -1,0 +1,60 @@
+/* Footer container */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 50px; /* Add top margin to Footer */
+  position: fixed;  /* Fix the footer at the bottom of the page */
+  bottom: 0;
+  left: 0;
+  width: 100%;      /* Ensure the footer stretches the full width */
+  box-sizing: border-box;
+  z-index: 1000;    /* Ensure the footer stays above other content */
+}
+
+/* Footer content container */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Footer copyright text */
+.footer p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+/* Social media icons container */
+.social-icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+/* Social media icon links */
+.social-icons a {
+  color: white;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+/* Hover effect for social media icons */
+.social-icons a:hover {
+  color: #ff5252;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .social-icons {
+    gap: 10px;
+  }
+}
